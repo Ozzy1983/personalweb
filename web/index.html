@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PERSONAL WEB</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="Personal web for Oswaldo Cardozo Gutierrez.">
+        <meta name="author" content="Oswaldo D. Gutierrez">
+        <meta name="copyright" content=" Oswaldo D. Gutierrez">
+        <meta name="robots" content="index">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <header>
+                    
+            <div class="mylogo">
+                <a href="index.html">
+                    <img src="logo-white2.png" >
+                </a>
+            </div>
+
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <img src="burger.png" class="burger">
+                </label>
+
+                <ul>
+                    <li><a href="aboutme.html"><span class="highlight">[</span>ABOUT ME<span class="highlight">]</span></a></li>
+                    <li><a href="performance.html"><span class="highlight">[</span>PROJECTS<span class="highlight">]</span></a></li>
+                    <li><a href="education.html"><span class="highlight">[</span>EDUCATION<span class="highlight">]</span></a></li>
+                    <li><a href="skills.html"><span class="highlight">[</span>SKILLS<span class="highlight">]</span></a></li>
+                    <li><a href="contact.html"><span class="highlight">[</span>CONTACT<span class="highlight">]</span></a></li>
+                </ul>
+            </nav>
+                
+        </header>
+
+        <div class="main-container">
+    
+            <div class="box name-container" id="target1">
+
+                <div class="text-container">
+                    <div class="name"><h1>I'm Oswaldo, a </h1></div>
+                    <div class="proffesion"><h1><span class="highlight">[</span>Software Developer<span class="highlight">]</span></h1></div>
+                    <p>I am eager to gain entry into the tech industry into an exciting team where I can both contribute and develop further in my tech career!</p>           
+                </div>
+
+                <div class="circulo">
+                    <h1><a href="contact.html">⇩</a></h1>
+                </div>
+    
+            </div>
+
+            <div class="box details-container" id="target2">
+                <div class="details-box">
+                    <h3>about me</h3>
+                    <p>
+                        Entry-level Junior software developer, 
+                        recently completed a Level 3 Diploma in Full stack software development.
+                    </p>
+                    <h4><span class="underline"><a href="aboutme.html">learn more ➔</a></span></h4>
+                </div>
+                <div class="details-box">
+                    <h3>my work</h3>
+                    <p>
+                        I started teaching myself how to create websites and have completed two programming courses so far. Along the way, I’ve built three complete web projects: a construction company site, an online newspaper, and my own portfolio. Now, I feel ready to take the next step and dive into a programming role.
+                    </p>
+                    <h4><span class="underline"><a href="performance.html">browse portfolio ➔</a></span></h4>
+                </div>
+                <div class="details-box">
+                    <h3>follow me</h3>
+                    <img src="photoportada.png" alt="">
+                    <div  class="ladrillo" id="target5">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/tu_usuario" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.youtube.com/tu_canal" target="_blank"> <i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+        <footer>
+            <p>&copy; 2024 made by <a href="https://oswaldodgutierrez.netlify.app/" class="enlace-footer" target="_blank"> Oswaldo D. Gutierrez</p></a>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#target2").fadeIn(2000);
+                $("#target1").fadeIn(4000);
+            });
+        </script>
+
+    </body>
+
+    
+
+
+</html>

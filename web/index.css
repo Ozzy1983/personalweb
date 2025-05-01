@@ -1,0 +1,273 @@
+/*--- MAIN CONTAINER INDEX---*/
+
+.main-container{
+   width: 70%;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 90px;
+   height: auto;
+   margin-top: 200px;
+   position: relative;
+   background-image: url('photoportada.png'); 
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+/*--- MY NAME ----*/
+.name-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.text-container h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.text-container p{
+    color: #a6a6a6;
+    margin-top: 25px;
+    width: 60%;
+}
+
+.box{
+    display: flex;
+    flex-direction: column; 
+}
+
+/* circle with effect */
+.circulo{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #16a085;
+    margin-left: 10px;
+}
+
+.circulo a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.circulo:hover{
+    transform: scale(1.2);
+    background-color: #D16969;
+}
+
+.circulo h1{
+    font-size: 5rem;
+    
+}
+
+.circulo h1:hover{
+    transform: scale(1.2);
+    color: #16a085;
+}
+
+@keyframes circulo {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-20px); }
+    50%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.circulo{
+    animation: circulo 1.2s ease-in-out 3 forwards;
+   
+}
+
+/*--- ABOUT ME, MY WORK, FOLLOW ME ---*/
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.details-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 35px;
+    padding: 20px;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+.details-box h3, h4{
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.details-box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.details-box a:hover{
+    transform: scale(1.2);
+    color: #16a085;
+}
+
+.details-box .underline{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.details-box .underline::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px; /* distancia entre palabra y línea */
+    width: 0%;
+    height: 3px;
+    background-color: #D16969;
+    transition: width 0.3s ease;
+}
+
+.details-box .underline:hover::after{
+    width: 100%;
+}
+
+
+.details-box p{
+    color: #a6a6a6;
+}
+
+.details-box img{
+    display: none;
+}
+
+/*--- icon networks ---*/
+
+#target5 a{
+    opacity: 0.9;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 10px; 
+}
+
+#target5 a:hover{
+    transform: scale(1.3);
+    color: #D16969;
+}
+
+/*--- for jquery --*/
+
+#target2{
+    display: none;
+}
+
+#target1{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 710px){
+
+
+
+   
+ 
+
+
+}
+
+@media screen and (max-width: 425px){
+    .main-container{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        margin-top: 120px;
+        gap: 25px;
+    }
+
+    .box{
+        width: 95%;
+    }
+
+    .text-container h1{
+        font-size: 1.5rem;
+    }
+
+    .text-container{
+        padding: 0;
+        gap: 0;
+    }
+
+    .details-box{
+        padding: 0;
+    }
+
+    .text-container p{
+        width: 100%;
+    }
+
+    .circle{
+        width: 80px;
+        height: 80px;
+    }
+
+    .circle h1{
+        font-size: 3rem;
+    }
+
+    .details-box{
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .details-box img{
+        display: inline;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .details-box h3, h4{
+        font-size: 1rem;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
